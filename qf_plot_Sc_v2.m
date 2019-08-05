@@ -1,0 +1,15 @@
+figure;
+image(Scd2{length(Ec),length(Dt)},'CDataMapping','scaled')
+set(gca,'Ydir','Normal','FontSize',14);
+caxis([-1/4,1/4]);
+colormap('jet');
+set(gcf,'color','white');
+set(gca,'FontSize',14);
+figure;
+image(Scd1{length(Ec),(length(Dt)+1)/2},'CDataMapping','scaled')
+set(gca,'Ydir','Normal','FontSize',14);
+caxis([-1/4,1/4]);
+colormap('jet');
+colorbar();
+set(gcf,'color','white');
+set(gca,'FontSize',14);

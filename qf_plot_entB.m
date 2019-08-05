@@ -1,0 +1,13 @@
+entt=interp2(entdB,5,'cubic');
+colormap(linspecer(100,'sequential'));
+% colormap('jet');
+image([min(Dt),max(Dt)],[min(Em),max(Em)],entt,'CDataMapping','scaled');
+h=colorbar;
+caxis([0 3]);
+set(gca,'Ydir','Normal','FontSize',24);
+% xlabel('$\Delta t$','interpreter','latex');
+% ylabel('$U$','interpreter','latex');
+set(h,'YTick',[0:3]);
+box on;
+set(gcf,'color','white');
+set(gca,'YTick',[0,0.1,0.2]);

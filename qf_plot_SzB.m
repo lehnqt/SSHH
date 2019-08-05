@@ -1,0 +1,13 @@
+Szt=SzB;
+colormap(linspecer(100,'sequential'));
+% colormap('jet');
+image([min(Dt),max(Dt)],[min(Em),max(Em)],Szt,'CDataMapping','scaled');
+set(gca,'Ydir','Normal','FontSize',14);
+h=colorbar;
+caxis([0 3]);
+% xlabel('$\Delta t$','interpreter','latex');
+% ylabel('$U$','interpreter','latex');
+set(h,'YTick',[0:3]);
+box on;
+set(gcf,'color','white');
+set(gca,'ytick',[0.1,0.3,0.5]);

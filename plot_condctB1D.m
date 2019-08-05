@@ -1,0 +1,15 @@
+load('dat_condctB_N12_topol.mat');
+g1=g;
+plot(chem,g1(1,:),'-r','LineWidth',1);
+xlim([-20 60]);
+box on;
+set(gca,'FontSize',24);
+set(gcf,'color','white');
+hold on;
+load('dat_condctB_N12_triv.mat');
+g2=g;
+plot(chem,g2(1,:),':b','LineWidth',1);
+xlim([-20 60]);
+box on;
+set(gca,'FontSize',24);
+set(gcf,'color','white');
